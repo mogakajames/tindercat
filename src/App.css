@@ -1,0 +1,45 @@
+.App {
+  min-height: 100vh;
+}
+h1,
+h3 {
+  color: #1DA1F2;
+  text-align: center;
+}
+
+.search-form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 60%;
+  border: none;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1DA1F2;
+}
+
+.search-button {
+  background: #1DA1F2;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 600px) {
+    .cat {
+        width: 90%;
+    }
+  .search-bar {
+    width: 55%;
+  }
+  }
