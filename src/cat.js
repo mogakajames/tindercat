@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import style from "./cat.module.css";
 
 const Cat = ({ id, name, imageID, description, traits }) => {
@@ -16,12 +17,14 @@ const Cat = ({ id, name, imageID, description, traits }) => {
 
   return (
     <div key={id} className={style.cat}>
-      <img
-        key={catsImage.id}
-        className={style.img}
-        alt={imageID}
-        src={catsImage.url}
-      />
+      <a href={catsImage.id}>
+        <img
+          key={catsImage.id}
+          className={style.img}
+          alt={imageID}
+          src={catsImage.url}
+        />
+      </a>
       <h4 className={style.h}>{name}</h4>
       <p className={style.p}>
         <b>Description:</b> <br /> {description}
