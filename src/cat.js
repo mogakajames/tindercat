@@ -19,7 +19,6 @@ const Cat = ({ id, name, imageID, description, traits }) => {
     <div key={id} className={style.cat}>
       <a href={catsImage.id}>
         <img
-          key={catsImage.id}
           className={style.img}
           alt={imageID}
           src={catsImage.url}
